@@ -1,0 +1,113 @@
+@page
+@using Domain
+@model Player1AttackModel
+@{
+    ViewData["Title"] = "Player 1 attack";
+}
+
+<h3>Player 1 attack - click on enemy board to shoot!</h3>
+
+<div style="column-count: 2;">
+    
+
+    <div class="col-lg-push-12">
+        <table style="border: 1px solid black;">
+            <div style="text-align-all: left">You</div>
+            <tr>
+                <td style="border: 1px solid black; text-align-all: center"> </td>
+                @for (int a = 0; a < Domain.GameBoard.Player1Board1[0].Count; a++)
+                {
+                    <td style="border: 1px solid black;">@Domain.GameBoard.Alphabet[a]</td>
+                }
+            </tr>
+            @for (int i = 0; i < Domain.GameBoard.Player1Board1.Count; i++)
+            {
+                <tr>
+                    <td style="border: 1px solid black">@(i + 1)</td>
+                    @for (int j = 0; j < Domain.GameBoard.Player1Board1[i].Count; j++)
+                    {
+                        switch (Domain.GameBoard.Player1Board1[i][j])
+                        {
+                            case BoardSquareState.Empty:
+                                <td style="border: 2px solid black; width: 50px; height: 50px; background-color: inherit;"></td>
+                                break;
+                            case BoardSquareState.Unknown:
+                                <td style="border: 2px solid black; width: 50px; height: 50px; background-color: inherit;"></td>
+                                break;
+                            case BoardSquareState.Ship:
+                                <td style="border: 2px solid black; width: 50px; height: 50px"><img src="images/ship.png" style="width: 50px; height: 50px"/></td>
+                                break;
+                            case BoardSquareState.Hit:
+                                <td style="border: 2px solid black; width: 50px; height: 50px"><img src="images/hit.png" style="width: 50px; height: 50px"/></td>
+                                break;
+                            case BoardSquareState.Miss:
+                                <td style="border: 2px solid black; width: 50px; height: 50px"><img src="images/miss.png" style="width: 50px; height: 50px"/></td>
+                                break;
+
+                            default:
+                                throw new ArgumentOutOfRangeException();
+                        }
+                    }
+                </tr>
+            }
+        </table>
+    </div>
+    
+    <div class="col-lg-pull-12">
+        <table style="border: 1px solid black;">
+            <div style="text-align-all: left; font-style:initial">Enemy</div>
+
+            <tr>
+                <td style="border: 1px solid black;"> </td>
+                @for (int a = 0; a < Domain.GameBoard.Player1Board2[0].Count; a++)
+                {
+                    <td style="border: 1px solid black; text-align-all: center">@Domain.GameBoard.Alphabet[a]</td>
+                }
+            </tr>
+            @for (int i = 0; i < Domain.GameBoard.Player1Board2.Count; i++)
+            {
+                <tr>
+                    <td style="border: 1px solid black">@(i + 1)</td>
+                    @for (int j = 0; j < Domain.GameBoard.Player1Board2[i].Count; j++)
+                    {
+                        switch (Domain.GameBoard.Player1Board2[i][j])
+                        {
+                            case BoardSquareState.Empty:
+                                <td style="border: 2px solid black; width: 50px; height: 50px; background-color:inherit"></td>
+                                break;
+                            case BoardSquareState.Unknown:
+                                <td style="border: 2px solid black; width: 50px; height: 50px">
+                                    <form method="post">
+                                        <button style=" width: 48px; height: 48px; border: none; background-color:inherit" type="submit">
+                                            <input type="hidden" name="VertCoord" value="@i.ToString()"/>
+                                            <input type="hidden" name="HorizCoord" value="@j.ToString()"/>
+                                        </button>
+                                    </form>
+                                </td>
+                                break;
+                            case BoardSquareState.Ship:
+                                <td style="border: 2px solid black; width: 50px; height: 50px"><img src="images/ship.png" style="width: 50px; height: 50px"/></td>
+                                break;
+                            case BoardSquareState.Hit:
+                                <td style="border: 2px solid black; width: 50px; height: 50px"><img src="images/hit.png" style="width: 50px; height: 50px"/></td>
+                                break;
+                            case BoardSquareState.Miss:
+                                <td style="border: 2px solid black; width: 50px; height: 50px"><img src="images/miss.png" style="width: 50px; height: 50px"/></td>
+                                break;
+
+                            default:
+                                throw new ArgumentOutOfRangeException();
+                        }
+                    }
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+

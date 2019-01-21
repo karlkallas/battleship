@@ -1,0 +1,30 @@
+@page
+@model GameChoices
+@{
+}
+
+<body>
+<form method="post" >
+    <div>
+        <h2>Game mode: </h2>
+        <div>
+            <label for="TableSize">Enter the size of the table: </label>
+            <input style="background-color: inherit" type="text" name="TableSize" value="" />
+        </div>
+        <div>
+            <label for="GameMode">"M" -  you want to place the ships yourself /
+                                  "R" -  you want them placed randomly: </label>
+            <select style="background-color: inherit" type="text" name="GameMode" value="">
+                <option value="M">M</option>
+                <option value="R">R</option>
+            </select>
+        </div>
+        <div>
+            <br/>
+            <input type="submit" value="Continue" class="btn btn-lg bg-danger"/>
+        </div>
+    </div>
+</form>
+</body>
+
+<h3>@Model.Message</h3>

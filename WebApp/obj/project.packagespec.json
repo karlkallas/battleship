@@ -1,0 +1,73 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/karlkallas/RiderProjects/BattleShipV2/WebApp/WebApp.csproj",
+    "projectName": "WebApp",
+    "projectPath": "/Users/karlkallas/RiderProjects/BattleShipV2/WebApp/WebApp.csproj",
+    "outputPath": "/Users/karlkallas/RiderProjects/BattleShipV2/WebApp/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.2"
+    ],
+    "frameworks": {
+      "netcoreapp2.2": {
+        "projectReferences": {
+          "/Users/karlkallas/RiderProjects/BattleShipV2/DAL/DAL.csproj": {
+            "projectPath": "/Users/karlkallas/RiderProjects/BattleShipV2/DAL/DAL.csproj"
+          },
+          "/Users/karlkallas/RiderProjects/BattleShipV2/Domain/Domain.csproj": {
+            "projectPath": "/Users/karlkallas/RiderProjects/BattleShipV2/Domain/Domain.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.2": {
+      "dependencies": {
+        "Microsoft.AspNetCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        },
+        "Microsoft.AspNetCore.Razor.Design": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        },
+        "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "target": "Package",
+          "version": "[2.2.1, )"
+        },
+        "Microsoft.VisualStudio.Web.CodeGeneration.Tools": {
+          "target": "Package",
+          "version": "[2.0.4, )"
+        },
+        "MySql.Data.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[8.0.13, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+/Users/karlkallas/RiderProjects/BattleShipV2/Domain/bin/Debug/netstandard2.0/Domain.deps.json
+/Users/karlkallas/RiderProjects/BattleShipV2/Domain/bin/Debug/netstandard2.0/Domain.dll
+/Users/karlkallas/RiderProjects/BattleShipV2/Domain/bin/Debug/netstandard2.0/Domain.pdb
+/Users/karlkallas/RiderProjects/BattleShipV2/Domain/obj/Debug/netstandard2.0/Domain.csprojAssemblyReference.cache
+/Users/karlkallas/RiderProjects/BattleShipV2/Domain/obj/Debug/netstandard2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/karlkallas/RiderProjects/BattleShipV2/Domain/obj/Debug/netstandard2.0/Domain.AssemblyInfoInputs.cache
+/Users/karlkallas/RiderProjects/BattleShipV2/Domain/obj/Debug/netstandard2.0/Domain.AssemblyInfo.cs
+/Users/karlkallas/RiderProjects/BattleShipV2/Domain/obj/Debug/netstandard2.0/Domain.dll
+/Users/karlkallas/RiderProjects/BattleShipV2/Domain/obj/Debug/netstandard2.0/Domain.pdb

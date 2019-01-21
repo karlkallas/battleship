@@ -1,0 +1,92 @@
+@page
+@using Domain
+@model Player1AttackResultModel
+@{
+    ViewData["Title"] = "Player 1 attack result";
+}
+<body>
+
+@if (Domain.GameBoard.hitMiss == BoardSquareState.Hit)
+{
+    <h3>Hit!</h3>
+}
+else
+{
+    <h3>Miss!</h3>
+}
+
+
+@if (Domain.GameBoard.shipSquareCount == 0)
+{
+    Domain.GameBoard.gameOn = false;
+<h3>Congratulations! Player 1 won!</h3>
+
+}
+
+<h3>Player 1 enemy ships</h3>
+<table style="border: 1px solid black">
+    <tr>
+        <td style="border: 1px solid black"> </td>
+        @for (int a = 0; a < Domain.GameBoard.Player1Board2[0].Count; a++)
+        {
+            <td style="border: 1px solid black">@Domain.GameBoard.Alphabet[a]</td>
+        }
+    </tr>
+    @for (int i = 0; i < Domain.GameBoard.Player1Board2.Count; i++)
+    {
+        <tr>
+            <td style="border: 1px solid black">@(i + 1)</td>
+
+            @for (int j = 0; j < Domain.GameBoard.Player1Board2[i].Count; j++)
+            {
+                switch (Domain.GameBoard.Player1Board2[i][j])
+                {
+                    case BoardSquareState.Empty:
+                        <td style="border: 2px solid black; width: 50px; height: 50px; background-color:inherit"></td>
+                        break;
+                    case BoardSquareState.Unknown:
+                        <td style="border: 2px solid black; width: 50px; height: 50px; background-color:inherit"></td>
+                        break;
+                    case BoardSquareState.Ship:
+                        <td style="border: 2px solid black; width: 50px; height: 50px"><img src="images/ship.png" style="width: 50px; height: 50px"/></td>
+                        break;
+                    case BoardSquareState.Hit:
+                        <td style="border: 2px solid black; width: 50px; height: 50px"><img src="images/hit.png" style="width: 50px; height: 50px"/></td>
+                        break;
+                    case BoardSquareState.Miss:
+                        <td style="border: 2px solid black; width: 50px; height: 50px"><img src="images/miss.png" style="width: 50px; height: 50px"/></td>
+                        break;
+
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
+        </tr>
+    }
+</table>
+
+
+
+@if (Domain.GameBoard.shipSquareCount == 0)
+{
+    <form method="post">
+        <div>
+            <div>
+                <input type="submit" value="Start new game" class="btn btn-lg bg-danger"/>
+            </div>
+        </div>
+    </form>
+
+}
+
+else {
+    <form method="post">
+        <div>
+            <br/>
+            <div>
+                <input type="submit" value="Continue" class="btn btn-lg bg-danger"/>
+            </div>
+        </div>
+    </form>
+}
+</body>

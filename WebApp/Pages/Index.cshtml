@@ -1,0 +1,23 @@
+@page
+@using Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http
+@using Remotion.Linq.Parsing.Structure.NodeTypeProviders
+@model WelcomeModel
+@{
+    ViewData["Title"] = "Wanna start playing? Press start!";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <img src="images/title.png"/>
+</div>
+
+<body>
+<form method="post" >
+    <fieldset>
+        <br/>
+        <div >
+            <input type="submit" value="Start" class="btn btn-lg bg-danger"/>
+        </div>
+    </fieldset>
+</form>
+</body>

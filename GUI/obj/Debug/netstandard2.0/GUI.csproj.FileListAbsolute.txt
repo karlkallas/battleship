@@ -1,0 +1,12 @@
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/bin/Debug/netstandard2.0/GUI.deps.json
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/bin/Debug/netstandard2.0/GUI.dll
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/bin/Debug/netstandard2.0/GUI.pdb
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/bin/Debug/netstandard2.0/Domain.dll
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/bin/Debug/netstandard2.0/Domain.pdb
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/obj/Debug/netstandard2.0/GUI.csprojAssemblyReference.cache
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/obj/Debug/netstandard2.0/GUI.csproj.CoreCompileInputs.cache
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/obj/Debug/netstandard2.0/GUI.AssemblyInfoInputs.cache
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/obj/Debug/netstandard2.0/GUI.AssemblyInfo.cs
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/obj/Debug/netstandard2.0/GUI.csproj.CopyComplete
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/obj/Debug/netstandard2.0/GUI.dll
+/Users/karlkallas/RiderProjects/BattleShipV2/GUI/obj/Debug/netstandard2.0/GUI.pdb

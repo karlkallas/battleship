@@ -1,0 +1,16 @@
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/bin/Debug/netcoreapp2.2/ConsoleApp.deps.json
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/bin/Debug/netcoreapp2.2/ConsoleApp.runtimeconfig.json
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/bin/Debug/netcoreapp2.2/ConsoleApp.runtimeconfig.dev.json
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/bin/Debug/netcoreapp2.2/ConsoleApp.dll
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/bin/Debug/netcoreapp2.2/ConsoleApp.pdb
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/bin/Debug/netcoreapp2.2/Domain.dll
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/bin/Debug/netcoreapp2.2/GUI.dll
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/bin/Debug/netcoreapp2.2/GUI.pdb
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/bin/Debug/netcoreapp2.2/Domain.pdb
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/obj/Debug/netcoreapp2.2/ConsoleApp.csprojAssemblyReference.cache
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/obj/Debug/netcoreapp2.2/ConsoleApp.csproj.CoreCompileInputs.cache
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/obj/Debug/netcoreapp2.2/ConsoleApp.AssemblyInfoInputs.cache
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/obj/Debug/netcoreapp2.2/ConsoleApp.AssemblyInfo.cs
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/obj/Debug/netcoreapp2.2/ConsoleApp.csproj.CopyComplete
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/obj/Debug/netcoreapp2.2/ConsoleApp.dll
+/Users/karlkallas/RiderProjects/BattleShipV2/ConsoleApp/obj/Debug/netcoreapp2.2/ConsoleApp.pdb
